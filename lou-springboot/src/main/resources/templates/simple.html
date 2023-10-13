@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf simple syntax</title>
+</head>
+<body>
+    <h1>Thymeleaf simple syntax</h1>
+
+    <div>
+        <h5>Basic String operation:</h5>
+        <p>
+            A simple string: <span th:text="'thymeleaf text'">default text</span>
+        </p>
+        <p>
+            String concat: <span th:text="'thymeleaf text concat: ' + ${thymeleafText}">default text</span>
+        </p>
+    </div>
+
+    <div>
+        <h5>Basic bool operation</h5>
+        <p>
+            Number compare: 2019 > 2018 = <span th:text="2019&gt;2018"></span>
+        </p>
+        <p>
+            String compare: thymeleafText == 'shiyanlou'
+            result: <span th:text="${thymeleafText} == 'shiyanlou'"></span>
+        </p>
+        <p>
+            Complex Number compare: 13 == 39 / 3
+            result: <span th:text="13 == 39 / 3"></span>
+        </p>
+    </div>
+</body>
+</html>

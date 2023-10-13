@@ -1,18 +1,15 @@
 package com.lou.springboot.config;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import javax.validation.Valid;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class ComandRunner implements CommandLineRunner {
+public class CommandRunner implements CommandLineRunner {
 
     @Value("${spring.web.loginUrl}")
     private String loginUrl;
