@@ -11,6 +11,7 @@
         <property name="javaFormatter" value="org.mybatis.generator.api.dom.DefaultJavaFormatter"/>
         <!--  XML formatter      -->
         <property name="xmlFormatter" value="org.mybatis.generator.api.dom.DefaultXmlFormatter"/>
+        <!--  Overwrite toString method      -->
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
         <!--  Cement Generator      -->
         <commentGenerator>
@@ -27,10 +28,13 @@
             password="81638252a@"
         />
         <javaTypeResolver>
+            <!-- false: DECIMAL and NUMERIC in JDBC -> Integer
+                 true: DECIMAL and NUMERIC in JDBC -> java.math.BigDecimal      -->
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- javaModel Generator      -->
         <javaModelGenerator targetPackage="com.lou.springboot.entity" targetProject="src/main/java">
+            <!-- generate one more package based on targetPackage           -->
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
