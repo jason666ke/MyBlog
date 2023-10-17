@@ -2,7 +2,6 @@ package com.lou.springboot.service;
 
 import com.lou.springboot.dao.UserDao;
 import com.lou.springboot.entity.User;
-import org.hibernate.validator.constraints.ConstraintComposition;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

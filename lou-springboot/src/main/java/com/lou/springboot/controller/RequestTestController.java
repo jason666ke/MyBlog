@@ -2,7 +2,6 @@ package com.lou.springboot.controller;
 
 import com.lou.springboot.entity.User;
 import com.mysql.cj.util.StringUtils;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
