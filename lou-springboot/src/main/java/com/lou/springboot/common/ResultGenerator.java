@@ -1,9 +1,6 @@
 package com.lou.springboot.common;
 
-import com.lou.springboot.entity.User;
 import org.springframework.util.StringUtils;
-
-import java.util.List;
 
 public class ResultGenerator {
     private static final String DEFAULT_SUCCESS_MESSAGE = "SUCCESS";

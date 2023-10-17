@@ -13,7 +13,7 @@ import java.util.*;
 @RequestMapping("/api")
 public class ApiController {
 
-    static Map<Integer, User> userMap = Collections.synchronizedMap(new HashMap<Integer, User>());
+    static Map<Integer, User> userMap = Collections.synchronizedMap(new HashMap<>());
 
     // initialize map
     static {
@@ -49,7 +49,7 @@ public class ApiController {
     @RequestMapping(value = "/users", method = RequestMethod.GET)
     @ResponseBody
     public Result<List<User>> queryAll() {
-        List<User> users = new ArrayList<User>(userMap.values());
+        List<User> users = new ArrayList<>(userMap.values());
         return ResultGenerator.genSuccessResult(users);
     }
 
