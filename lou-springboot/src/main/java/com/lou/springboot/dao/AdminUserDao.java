@@ -1,9 +1,7 @@
 package com.lou.springboot.dao;
 
 import com.lou.springboot.entity.AdminUser;
-import com.lou.springboot.service.impl.AdminUserServiceImpl;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 
 import java.util.List;
 import java.util.Map;

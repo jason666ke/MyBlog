@@ -20,7 +20,6 @@ public class PageResult implements Serializable {
      * page device
      * @param totalCount
      * @param pageSize
-     * @param totalPage
      * @param curPage
      * @param list
      */

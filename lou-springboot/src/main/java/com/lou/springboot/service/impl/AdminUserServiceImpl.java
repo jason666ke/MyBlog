@@ -8,9 +8,7 @@ import com.lou.springboot.utils.PageResult;
 import com.lou.springboot.utils.PageUtil;
 import com.lou.springboot.utils.SystemUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 import org.springframework.stereotype.Service;
-import org.springframework.util.NumberUtils;
 
 import java.util.List;
 

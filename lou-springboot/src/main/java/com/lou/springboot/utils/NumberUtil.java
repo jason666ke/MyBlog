@@ -1,15 +1,12 @@
 package com.lou.springboot.utils;
 
-import com.fasterxml.jackson.databind.deser.DataFormatReaders;
-import com.mysql.cj.exceptions.CJConnectionFeatureNotAvailableException;
-
 import java.text.DecimalFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class NumberUtil {
 
-    private NumberUtil(){};
+    private NumberUtil(){}
 
     /**
      * judge if is phone number in China

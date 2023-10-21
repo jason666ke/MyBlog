@@ -17,7 +17,7 @@ public class SystemUtil {
      * @return
      */
     public static String genToken(String src) {
-        if (null == src || "".equals(src)) return null;
+        if (null == src || src.isEmpty()) return null;
         try {
             MessageDigest messageDigest = MessageDigest.getInstance("MD5");
             messageDigest.update(src.getBytes());
